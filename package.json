@@ -1,0 +1,53 @@
+{
+  "name": "deepseek-harness-ru",
+  "version": "1.0.0",
+  "description": "Русская локализация DeepSeek Harness: интерфейс, названия карточек плагинов и русский язык работы агента.",
+  "license": "MIT",
+  "author": "dsh-ru contributors",
+  "type": "module",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "localization",
+    "russian",
+    "i18n",
+    "plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hello-world-pro/DeepSeek-Harness-Ru.git"
+  },
+  "homepage": "https://github.com/Hello-world-pro/DeepSeek-Harness-Ru#readme",
+  "bugs": {
+    "url": "https://github.com/Hello-world-pro/DeepSeek-Harness-Ru/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "data/*.json",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}

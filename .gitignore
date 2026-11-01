@@ -1,0 +1,22 @@
+# Зависимости и артефакты сборки
+node_modules/
+.pnpm-store/
+dist/
+*.tgz
+
+# Логи и временные файлы
+*.log
+npm-debug.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Редакторы
+.vscode/
+.idea/
+*.swp
+
+# Личное окружение
+.env
+.env.local
