@@ -1,3 +1,7 @@
+# Bundle layer: registers the host half of the Russian localization.
+# `name` must resolve through the installed package, so it has to match
+# package.json#name — the old `@local/dsh-ru` never resolved and the plugin
+# only loaded through the manual insert in the profile patch.
 - insert:
     - id: ru
-      name: '@local/dsh-ru'
+      name: 'deepseek-harness-ru'
